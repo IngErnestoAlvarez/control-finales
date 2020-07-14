@@ -15,6 +15,7 @@ require "./database"
 require "./initializers/**"
 
 # Start Generator Dependencies: Don't modify.
+require "../src/pipes/**"
 require "../src/models/**"
 # End Generator Dependencies
 

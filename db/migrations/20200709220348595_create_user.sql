@@ -1,12 +1,12 @@
 -- +micrate Up
-CREATE TABLE materia (
+CREATE TABLE users (
   id BIGSERIAL PRIMARY KEY,
-  nombre VARCHAR,
-  codigo VARCHAR,
+  email VARCHAR,
+  hashed_password VARCHAR,
   created_at TIMESTAMP,
   updated_at TIMESTAMP
 );
 
 
 -- +micrate Down
-DROP TABLE IF EXISTS materia;
+DROP TABLE IF EXISTS users;

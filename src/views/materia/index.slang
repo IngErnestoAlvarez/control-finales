@@ -7,14 +7,14 @@
   table.table.table-striped
     thead
       tr
-        th Nombre
         th Codigo
+        th Nombre
         th Actions
     tbody
       - materia.each do |materia|
         tr
-          td = materia.nombre
           td = materia.codigo
+          td = materia.nombre
           td
             span
               == link_to("Show", "/materia/#{materia.id}", class: "btn btn-info btn-sm")

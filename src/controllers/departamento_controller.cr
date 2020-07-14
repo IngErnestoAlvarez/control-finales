@@ -11,6 +11,7 @@ class DepartamentoController < ApplicationController
   end
 
   def show
+    materias = departamento.materias
     render "show.slang"
   end
 
