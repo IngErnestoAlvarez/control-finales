@@ -10,6 +10,7 @@
         th Dia
         th Mes
         th Ano
+        th Materia
         th Actions
     tbody
       - finals.each do |final|
@@ -17,6 +18,7 @@
           td = final.dia
           td = final.mes
           td = final.ano
+          td = final.materia
           td
             span
               == link_to("Show", "/finals/#{final.id}", class: "btn btn-info btn-sm")

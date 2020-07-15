@@ -11,5 +11,7 @@
     == text_field(name: "mes", value: final.mes, placeholder: "Mes", class: "form-control")
   .form-group
     == text_field(name: "ano", value: final.ano, placeholder: "Ano", class: "form-control")
+  .form-group
+    == text_field(name: "materia", value: final.materia.name, placeholder: "Materia", class: "form-control")
   == submit("Submit", class: "btn btn-success btn-sm")
   == link_to("Back", "/finals", class: "btn btn-light btn-sm")
