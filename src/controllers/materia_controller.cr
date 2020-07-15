@@ -51,6 +51,7 @@ class MateriaController < ApplicationController
     params.validation do
       required :nombre
       required :codigo
+      required :departamento_id
     end
   end
 

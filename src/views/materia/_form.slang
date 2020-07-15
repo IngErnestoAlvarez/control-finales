@@ -9,5 +9,9 @@
     == text_field(name: "nombre", value: materia.nombre, placeholder: "Nombre", class: "form-control")
   .form-group
     == text_field(name: "codigo", value: materia.codigo, placeholder: "Codigo", class: "form-control")
+  .form-group
+    select name="departamento_id" 
+      -Departamento.all.each do |departamento|
+        option value="#{departamento.id}" = departamento.nombre
   == submit("Submit", class: "btn btn-success btn-sm")
   == link_to("Back", "/materia", class: "btn btn-light btn-sm")
