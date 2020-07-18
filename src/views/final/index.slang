@@ -18,7 +18,7 @@
           td = final.dia
           td = final.mes
           td = final.ano
-          td = final.materia
+          td = final.materia.nombre
           td
             span
               == link_to("Show", "/finals/#{final.id}", class: "btn btn-info btn-sm")
