@@ -11,7 +11,6 @@ class MateriaController < ApplicationController
   end
 
   def show
-    finales = materia.finales
     render "show.slang"
   end
 

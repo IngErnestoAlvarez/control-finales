@@ -20,7 +20,7 @@ p
         th Mes
         th Ano
     tbody
-      - finales.each do |final|
+      - materia.finals.each do |final|
         tr
           td = final.dia
           td = final.mes

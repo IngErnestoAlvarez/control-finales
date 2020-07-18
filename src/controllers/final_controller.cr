@@ -52,6 +52,7 @@ class FinalController < ApplicationController
       required :dia
       required :mes
       required :ano
+      required :materia_id
     end
   end
 

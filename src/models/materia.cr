@@ -4,7 +4,7 @@ class Materia < Granite::Base
 
   belongs_to departamento : Departamento
 
-  has_many finales : Final
+  has_many finals : Final
 
   column id : Int64, primary: true
   column nombre : String?
