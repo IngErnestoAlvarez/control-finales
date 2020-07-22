@@ -4,6 +4,8 @@ class Final < Granite::Base
 
   belongs_to materia : Materia
 
+  has_many inscripcions : Inscripcion
+
   column id : Int64, primary: true
   column dia : String?
   column mes : String?

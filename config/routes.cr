@@ -40,12 +40,18 @@ Amber::Server.configure do
 
     resources "materia", MateriaController
 
-    resources "finals", FinalController
+    resources "/materia/:materia_id/final", FinalController, except: [:index]
 
     get "/signin", SessionController, :new
     post "/session", SessionController, :create
     get "/signup", UserController, :new
     post "/registration", UserController, :create
+
+    resources "inscripcions", InscripcionController, only: [:index]
+    
+    get "/inscripcions/:dep_id", InscripcionController, :dep
+    get "/inscripcions/:dep_id/:materia_id", InscripcionController, :mat
+
   end
 
   routes :auth do

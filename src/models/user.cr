@@ -5,6 +5,8 @@ class User < Granite::Base
   connection pg
   table users
 
+  has_many inscripcions : Inscripcion
+
   column id : Int64, primary: true
   column email : String?
   column hashed_password : String?

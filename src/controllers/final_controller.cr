@@ -25,7 +25,8 @@ class FinalController < ApplicationController
   def create
     final = Final.new final_params.validate!
     if final.save
-      redirect_to action: :index, flash: {"success" => "Final has been created."}
+      redirect_to location: "/materia/#{params[:materia_id]}", flash: {"success" => "Final has been created."}
+
     else
       flash[:danger] = "Could not create Final!"
       render "new.slang"
@@ -35,7 +36,7 @@ class FinalController < ApplicationController
   def update
     final.set_attributes final_params.validate!
     if final.save
-      redirect_to action: :index, flash: {"success" => "Final has been updated."}
+      redirect_to location: "/materia/#{params[:materia_id]}", flash: {"success" => "Final has been updated."}
     else
       flash[:danger] = "Could not update Final!"
       render "edit.slang"

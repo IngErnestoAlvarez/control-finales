@@ -11,7 +11,7 @@ p
 	.col-sm-11
 		h2 Finales
 	.col-sm-1
-		a.btn.btn-success.btn-sm href="/finals/new" New
+		a.btn.btn-success.btn-sm href="/materia/#{materia.id}/final/new" New
 .table-responsive
   table.table.table-striped
     thead
