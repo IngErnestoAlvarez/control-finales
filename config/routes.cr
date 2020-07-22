@@ -51,6 +51,7 @@ Amber::Server.configure do
     
     get "/inscripcions/:dep_id", InscripcionController, :dep
     get "/inscripcions/:dep_id/:materia_id", InscripcionController, :mat
+    get "/inscripcions/:dep_id/:materia_id/:final_id", InscripcionController, :create
 
   end
 

@@ -13,5 +13,5 @@
           td = "#{final.dia}/#{final.mes}/#{final.ano}"
           td
             span
-              == link_to("Inscribirse", "/inscripcions/#{params[:dep_id]}/#{params[:materia_id]}/#{final.id}", class: "btn btn-info btn-sm")
+              == link_to("Inscribirse", "/inscripcions/#{params[:dep_id]}/#{params[:materia_id]}/#{final.id}", class: "btn btn-info btn-sm") if context.current_user
 

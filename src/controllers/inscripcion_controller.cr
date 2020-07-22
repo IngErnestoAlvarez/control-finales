@@ -19,6 +19,8 @@ class InscripcionController < ApplicationController
     render "index3.slang" if materia
   end
 
+    
+
   def show
     render "show.slang"
   end
@@ -33,6 +35,9 @@ class InscripcionController < ApplicationController
 
   def create
     inscripcion = Inscripcion.new inscripcion_params.validate!
+    if (current_user = context.current_user)
+      inscripcion.user = current_user
+    end
     if inscripcion.save
       redirect_to action: :index, flash: {"success" => "Inscripcion has been created."}
     else
@@ -58,6 +63,7 @@ class InscripcionController < ApplicationController
 
   private def inscripcion_params
     params.validation do
+      required :final_id
     end
   end
 
