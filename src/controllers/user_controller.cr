@@ -2,11 +2,15 @@ class UserController < ApplicationController
   getter user = User.new
 
   before_action do
-    only [:show, :edit, :update, :destroy] { set_user }
+    only [:show, :edit, :update, :destroy, :mis] { set_user }
   end
 
   def show
     render("show.slang")
+  end
+
+  def mis
+    render("inscr.slang")
   end
 
   def new
