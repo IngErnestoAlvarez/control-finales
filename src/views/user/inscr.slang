@@ -6,9 +6,10 @@
     thead
       tr
         th fecha
-        th Actions
+        th Materia
     tbody
       - user.inscripcions.each do |insc|
         - final = insc.final
         tr
           td = "#{final.dia}/#{final.mes}/#{final.ano}"
+          td = final.materia.nombre

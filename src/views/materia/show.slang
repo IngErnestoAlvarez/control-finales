@@ -27,6 +27,6 @@ p
           td = final.ano
           td
             span
-              == link_to("Show", "/final/#{final.id}", class: "btn btn-info btn-sm")
+              == link_to("Show", "/materia/#{materia.id}/final/#{final.id}", class: "btn btn-info btn-sm")
               == link_to("Edit", "/final/#{final.id}/edit", class: "btn btn-success btn-sm")
               == link_to("Delete", "/final/#{ final.id }?_csrf=#{csrf_token}", "data-method": "delete", "data-confirm": "Are you sure?", class: "btn btn-danger btn-sm")
