@@ -1,3 +1,3 @@
-h1 New Materia
+h1 Nueva materia
 
 == render(partial: "_form.slang")

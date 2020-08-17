@@ -5,7 +5,7 @@
   table.table.table-striped
     thead
       tr
-        th fecha
+        th Fecha
         th Materia
     tbody
       - user.inscripcions.each do |insc|

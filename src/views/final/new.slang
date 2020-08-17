@@ -1,3 +1,3 @@
-h1 New Final
+h1 Nuevo final
 
 == render(partial: "_form.slang")

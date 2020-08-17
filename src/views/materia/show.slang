@@ -1,17 +1,17 @@
-h1 Show Materia
+h1 Materia
 p = materia.codigo
 p = materia.nombre
 p = materia.departamento.nombre
 p
-  == link_to("Back", "/materia", class: "btn btn-light btn-sm")
-  == link_to("Edit", "/materia/#{materia.id}/edit", class: "btn btn-success btn-sm")
-  == link_to("Delete", "/materia/#{materia.id}?_csrf=#{csrf_token}", "data-method": "delete", "data-confirm": "Are you sure?", class: "btn btn-danger btn-sm")
+  == link_to("Atras", "/materia", class: "btn btn-light btn-sm")
+  == link_to("Editar", "/materia/#{materia.id}/edit", class: "btn btn-success btn-sm")
+  == link_to("Borrar", "/materia/#{materia.id}?_csrf=#{csrf_token}", "data-method": "delete", "data-confirm": "Are you sure?", class: "btn btn-danger btn-sm")
 
 .row
 	.col-sm-11
 		h2 Finales
 	.col-sm-1
-		a.btn.btn-success.btn-sm href="/materia/#{materia.id}/final/new" New
+		a.btn.btn-success.btn-sm href="/materia/#{materia.id}/final/new" Agregar
 .table-responsive
   table.table.table-striped
     thead
@@ -27,6 +27,6 @@ p
           td = final.ano
           td
             span
-              == link_to("Show", "/materia/#{materia.id}/final/#{final.id}", class: "btn btn-info btn-sm")
-              == link_to("Edit", "/final/#{final.id}/edit", class: "btn btn-success btn-sm")
-              == link_to("Delete", "/final/#{ final.id }?_csrf=#{csrf_token}", "data-method": "delete", "data-confirm": "Are you sure?", class: "btn btn-danger btn-sm")
+              == link_to("Entrar", "/materia/#{materia.id}/final/#{final.id}", class: "btn btn-info btn-sm")
+              == link_to("Editar", "/materia/#{materia.id}/final/#{final.id}/edit", class: "btn btn-success btn-sm")
+              == link_to("Borrar", "/materia/#{materia.id}/final/#{final.id}?_csrf=#{csrf_token}", "data-method": "delete", "data-confirm": "Are you sure?", class: "btn btn-danger btn-sm")

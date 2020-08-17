@@ -13,5 +13,5 @@
     select name="departamento_id"
       -Departamento.all.each do |departamento|
         option value="#{departamento.id}" = departamento.nombre
-  == submit("Submit", class: "btn btn-success btn-sm")
-  == link_to("Back", "/materia", class: "btn btn-light btn-sm")
+  == submit("Aceptar", class: "btn btn-success btn-sm")
+  == link_to("Atras", "/materia", class: "btn btn-light btn-sm")

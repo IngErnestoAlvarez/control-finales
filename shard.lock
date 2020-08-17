@@ -34,7 +34,7 @@ shards:
 
   email:
     git: https://github.com/arcage/crystal-email.git
-    version: 0.6.1
+    version: 0.6.2
 
   exception_page:
     git: https://github.com/crystal-loot/exception_page.git
@@ -50,7 +50,7 @@ shards:
 
   granite:
     git: https://github.com/amberframework/granite.git
-    version: 0.21.0
+    version: 0.21.1
 
   i18n:
     git: https://github.com/TechMagister/i18n.cr.git

@@ -6,7 +6,7 @@
     thead
       tr
         th Final
-        th acciones
+        th Opciones
     tbody
       - materia.finals.each do |final|
         tr
@@ -14,4 +14,3 @@
           td
             span
               == link_to("Inscribirse", "/inscripcions/#{params[:dep_id]}/#{params[:materia_id]}/#{final.id}", class: "btn btn-info btn-sm") if context.current_user
-

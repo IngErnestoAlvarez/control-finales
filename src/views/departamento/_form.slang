@@ -7,5 +7,5 @@
   == csrf_tag
   .form-group
     == text_field(name: "nombre", value: departamento.nombre, placeholder: "Nombre", class: "form-control")
-  == submit("Submit", class: "btn btn-success btn-sm")
-  == link_to("Back", "/departamentos", class: "btn btn-light btn-sm")
+  == submit("Aceptar", class: "btn btn-success btn-sm")
+  == link_to("Atras", "/departamentos", class: "btn btn-light btn-sm")

@@ -6,7 +6,7 @@
     thead
       tr
         th Materia
-        th acciones
+        th Opciones
     tbody
       - departamento.materias.each do |materia|
         tr

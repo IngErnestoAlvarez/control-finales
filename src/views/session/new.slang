@@ -1,4 +1,4 @@
-h1 Sign In
+h1 Ingresar
 
 - if user.errors
   ul.errors
@@ -11,6 +11,6 @@ form action="/session" method="post"
     input.form-control type="email" name="email" placeholder="Email"
   .form-group
     input.form-control type="password" name="password" placeholder="Password"
-  button.btn.btn-success.btn-sm type="submit" Sign In
+  button.btn.btn-success.btn-sm type="submit" Ingresar
 <hr/>
-== link_to("Don't have an account yet?", "/signup")
+== link_to("¿Todavia no tenes una cuenta?", "/signup")

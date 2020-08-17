@@ -1,4 +1,4 @@
-h1 Edit Profile
+h1 Editar perfil
 
 - if user.errors
   ul.errors
@@ -9,5 +9,5 @@ h1 Edit Profile
   == csrf_tag
   .form-group
     input.form-control type="email" name="email" placeholder="Email" value="#{user.email}"
-  == submit("Update", class: "btn btn-success btn-sm")
-  == link_to("Profile", "/profile", class: "btn btn-light btn-sm")
+  == submit("Actualizar", class: "btn btn-success btn-sm")
+  == link_to("Perfil", "/profile", class: "btn btn-light btn-sm")

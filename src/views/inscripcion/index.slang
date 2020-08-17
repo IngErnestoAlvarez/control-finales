@@ -6,7 +6,7 @@
     thead
       tr
         th Departamento
-        th acciones
+        th Opciones
     tbody
       - Departamento.all.each do |depar|
         tr
